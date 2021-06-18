@@ -1,0 +1,77 @@
+<labels>
+    <fullName>WeeklyDashboard</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Report_label</shortDescription>
+    <value>Weekly Dashboard</value>
+</labels>
+<labels>
+    <fullName>YearlyDashboard</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Report_label</shortDescription>
+    <value>Yearly Dashboard</value>
+</labels>
+<labels>
+    <fullName>GenerateReport</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Report_label</shortDescription>
+    <value>Generate Report</value>
+</labels>
+<labels>
+    <fullName>DownloadReport</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Report_label</shortDescription>
+    <value>Download Report</value>
+</labels>
+<labels>
+    <fullName>Flow_Label</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Flow_Label</shortDescription>
+    <value>Flow</value>
+</labels>
+<labels>
+    <fullName>Irradiance_Label</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Irradiance_Label</shortDescription>
+    <value>Irradiance</value>
+</labels>
+<labels>
+    <fullName>NoDataFromSASInReport</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>Report_label</shortDescription>
+    <value>We are sorry, but the data is not available at the moment</value>
+</labels>
+<labels>
+    <fullName>No_Document_Found</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>No document inside document folder</shortDescription>
+    <value>No documents found</value>
+</labels>
+<labels>
+    <fullName>No_Document_Found_Text</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>No document found inside document folder - text</shortDescription>
+    <value>There aren&apos;t any documents in your library.</value>
+</labels>
+<labels>
+    <fullName>Number_of_modules</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>ppa_dashboard_numberOfModules</shortDescription>
+    <value>Number of modules</value>
+</labels>
+<labels>
+    <fullName>PPA_Card_Image</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>PPA_NAME_FOLDER_CARDS_IMAGE</shortDescription>
+    <value>Card Images</value>
+</labels>
