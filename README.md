@@ -100,6 +100,7 @@ Enter abbreviation >> FR
 After entering all the languages, as in the image above, you will see that this message will appear: *The file: "Labels.csv" was created successfully!* and the script will close.
 
 You can see, that in the script folder a new file: "Labels.csv" was created and it should look like this:
+![](https://github.com/NikCantelli/Salesforce/blob/main/CSV-Example.png)
 
 At this point you just have to translate the custom labels with the appropriate language in the correct cell.
 
