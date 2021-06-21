@@ -19,7 +19,8 @@ class Inverter:
 
     def readFromCSV(self):
         customLabelsTranslated = self.getLabels()
-        with open('Labels.csv', 'r') as csv_file:
+        fileName = input("\nEnter the file name/path to read >> ")
+        with open(fileName, 'r') as csv_file:
             header = []
             csv_reader = csv.DictReader(csv_file)
             line_count = 0
@@ -46,7 +47,6 @@ class Inverter:
             
     def createFiles(self):
         languages = self.getLanguages()
-        del languages[0]
         labels = self.getLabels()
         sizeLan = len(languages)
         dirName = "Translations/"
@@ -54,20 +54,21 @@ class Inverter:
             os.makedirs(dirName)
             print("Directory " , dirName ,  " Created.")
         for lan in range(sizeLan):
-            fName = dirName+languages[lan]+"-Labels.xml"
-            fileOut = open(fName, "w")
-            for lab in labels:
-                standardString = "<customLabels>\n\t<label>labelTranslated</label>\n\t<name>apiName</name>\n</customLabels>\n"
-                apiName = lab["API Name"]
-                value = lab["Translations"][lan]
-                standardString = standardString.replace("labelTranslated", value)
-                standardString = standardString.replace("apiName", apiName)
-                fileOut.write(standardString)
-            fileOut.close()
-            if os.stat(fName).st_size != 0:
-                print("The file: \""+languages[lan]+"-Labels.xml\" was created successfully.")
-            else:
-                print("\nSorry, something went wrong\nPlease, try again")
+            if lan != 0:
+                fName = dirName+languages[lan]+"-Labels.xml"
+                fileOut = open(fName, "w")
+                for lab in labels:
+                    standardString = "<customLabels>\n\t<label>labelTranslated</label>\n\t<name>apiName</name>\n</customLabels>\n"
+                    apiName = lab["API Name"]
+                    value = lab["Translations"][lan]
+                    standardString = standardString.replace("labelTranslated", value)
+                    standardString = standardString.replace("apiName", apiName)
+                    fileOut.write(standardString)
+                fileOut.close()
+                if os.stat(fName).st_size != 0:
+                    print("The file: \""+languages[lan].lower()+".translation-meta.xml\" was created successfully.")
+                else:
+                    print("\nSorry, something went wrong\nPlease, try again")
 
     def invert(self):
         self.readFromCSV()
