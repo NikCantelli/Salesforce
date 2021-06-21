@@ -77,7 +77,7 @@ After entering all the languages, as in the image above, you will see that this 
 
 You can see, that in the script folder a new file: "Labels.csv" was created and it should look like this:
 
-![](C:\Users\cantellini\AppData\Roaming\marktext\images\2021-06-21-19-36-26-image.png)
+![](https://github.com/NikCantelli/Salesforce/blob/main/CSV-Example.png)
 
 At this point you just have to translate the custom labels with the appropriate language in the correct cell.
 
